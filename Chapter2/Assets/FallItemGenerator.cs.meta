@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 808e5757fcf314de09042f2dce10e051
+timeCreated: 1506264998
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - fallCPrefab: {fileID: 1251498335370454, guid: 124f3caf919ec40018f0d699465a10d7,
+      type: 2}
+  - fallGPrefab: {fileID: 1434341449702782, guid: 67ca97238aa6c4903ba89249c8e2d12e,
+      type: 2}
+  - fallAPrefab: {fileID: 1864496293006850, guid: a76e901f9ec7a4134a21618e899bc4f0,
+      type: 2}
+  - fallTPrefab: {fileID: 1357550054532558, guid: 3f636ff5bf0e9418a87b2c8cf6cfce66,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

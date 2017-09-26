@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 6ab26bde3fdb440dcbcacfb1cd5cd831
+timeCreated: 1506351734
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - catchAPrefab: {fileID: 1831739383709826, guid: d637db0ec3f594be284aa75fada2d66a,
+      type: 2}
+  - catchTPrefab: {fileID: 1608753871205730, guid: a5f29727f4e8743d1a9c4fd10e67573b,
+      type: 2}
+  - catchCPrefab: {fileID: 1296199723128808, guid: d34ded192d4be433aa55e2303178d5d9,
+      type: 2}
+  - catchGPrefab: {fileID: 1277043290537044, guid: 826fee6a60c564fd98f9890d7d84e6b1,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
