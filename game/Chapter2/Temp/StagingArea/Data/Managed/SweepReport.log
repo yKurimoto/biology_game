@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 3
     Attributes = 178
   Total Field Removals = 793
-  Total Method Removals = 10484
+  Total Method Removals = 10485
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -9459,7 +9459,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 49
   Total Field Removals = 54
-  Total Method Removals = 4192
+  Total Method Removals = 4193
   References Removed = 0
 ---------------------------------------------------
     AOT.MonoPInvokeCallbackAttribute
@@ -14415,6 +14415,7 @@ Summary:
         set_fixedDeltaTime(System.Single)
         set_maximumDeltaTime(System.Single)
         set_maximumParticleDeltaTime(System.Single)
+        set_timeScale(System.Single)
     UnityEngine.Touch
         get_altitudeAngle()
         get_azimuthAngle()

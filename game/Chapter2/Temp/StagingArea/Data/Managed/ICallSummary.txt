@@ -449,7 +449,6 @@ UnityEngine.Time::get_deltaTime
 UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_unscaledDeltaTime
 UnityEngine.Time::get_unscaledTime
-UnityEngine.Time::set_timeScale
 UnityEngine.Transform::IsChildOf
 UnityEngine.Transform::get_childCount
 UnityEngine.Transform::INTERNAL_CALL_InverseTransformPoint
