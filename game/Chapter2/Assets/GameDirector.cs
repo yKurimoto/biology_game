@@ -26,19 +26,22 @@ public class GameDirector : MonoBehaviour {
 		this.timer.GetComponent<Image> ().fillAmount -= 0.017f;
 		if (timer.GetComponent<Image> ().fillAmount <= 0) {
 			finish.SetActive (true);
-			Time.timeScale = 0;
-			Invoke ("Return", 2.0f);
+			Invoke ("Return", 1.0f);
 		}
 	}
 
 	public void UpPointer () {
-		this.point += 100;
-		this.counter.GetComponent<Text> ().text = this.point.ToString () + "point"; 
+		if (timer.GetComponent<Image> ().fillAmount > 0) {
+			this.point += 100;
+			this.counter.GetComponent<Text> ().text = this.point.ToString () + "point"; 
+		}
 	}
 
 	public void DownPointer () {
-		this.point /= 2;
-		this.counter.GetComponent<Text> ().text = this.point.ToString () + "point"; 
+		if (timer.GetComponent<Image> ().fillAmount > 0) {
+			this.point /= 2;
+			this.counter.GetComponent<Text> ().text = this.point.ToString () + "point"; 
+		}
 	}
 
 	public void GenerateItem () {
@@ -84,7 +87,7 @@ public class GameDirector : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast((Vector2)ray.origin, (Vector2)ray.direction, Mathf.Infinity);
 
 			if (hit.collider.tag == "Start") {
-				Invoke ("Return", 2.0f);
+				Return ();
 			}
 		}
 	}
