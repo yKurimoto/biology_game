@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameDirector : MonoBehaviour {
 
 	public GameObject seikai;
+	public GameObject huseikai;
 	public int clickMove = -8;
 
 	void Return () {
@@ -29,7 +30,7 @@ public class GameDirector : MonoBehaviour {
 
 			if (hit.collider.tag == "Home") {
 				SceneManager.LoadScene ("StartScene");
-			} else if (hit.collider && clickMove <= 8) {
+			} else if (hit.collider && clickMove <= 8 && hit.collider.gameObject.transform.position.y == 1.5f) {
 				GameObject item = hit.collider.gameObject;
 				item.transform.position = new Vector3 (clickMove, -3, 0);
 				clickMove += 4;
@@ -47,7 +48,8 @@ public class GameDirector : MonoBehaviour {
 				Invoke("Return", 3.5f);
 
 			} else {
-				Return ();
+				huseikai.SetActive (true);
+				Invoke ("Return", 3.5f);
 			}
 		}
 	}

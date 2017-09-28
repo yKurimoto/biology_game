@@ -34,7 +34,7 @@ public class FallItemGenerator : MonoBehaviour {
 			} else {
 				item = Instantiate (fallTPrefab) as GameObject;
 			}
-			float x = Random.Range (-4, 4);
+			float x = Random.Range (-3, 3);
 			item.transform.position = new Vector3 (x * 2, 7, 0);
 		}
 
